@@ -12,6 +12,7 @@ Create a new directory for your project. This directory will hold all the files 
 ```bash
 mkdir blog
 cd blog
+'''
 
 Inside the blog directory, set up a virtual environment. A virtual environment ensures that your project dependencies don’t interfere with other Python projects.
 
