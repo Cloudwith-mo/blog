@@ -8,20 +8,19 @@ This guide explains how to set up and build a blog app using Flask, a lightweigh
 
 Create a new directory for your project. This directory will hold all the files related to your blog app, including your Python code, templates, and Markdown posts.
 
-### Commands:
+#### Commands:
 ```bash
 mkdir blog
 cd blog
 ```
 Inside the blog directory, set up a virtual environment. A virtual environment ensures that your project dependencies don’t interfere with other Python projects.
 
-Command:
+#### Command:
 ```bash
 python -m venv .venv
 ```
 Directory Structure:
 ```bash
-Copy code
 blog/
 ├── .venv/  # Virtual environment folder
 ```
@@ -30,7 +29,7 @@ blog/
 
 Activate the virtual environment to use the isolated Python environment.
 
-Command (Windows PowerShell):
+#### Command (Windows PowerShell):
 ```bash
 .venv\Scripts\Activate.ps1
 ```
@@ -40,19 +39,20 @@ Once activated, your terminal prompt will show `(.venv)` to indicate you’re wo
 
 Use pip (Python’s package installer) to install Flask and Markdown.
 
-Command:
-bash
-Copy code
+#### Command:
+```bash
 pip install flask markdown
-Packages Installed:
-flask: A lightweight web framework for Python.
-markdown: Converts Markdown content into HTML.
-Directory Structure:
-bash
+```
+###### Packages Installed:
+`flask`: A lightweight web framework for Python.
+`markdown`: Converts Markdown content into HTML.
+
+##### Directory Structure:
+```bash
 Copy code
 blog/
 ├── .venv/  # Virtual environment folder
-
+```
 ## **Step 4: Create Your Flask App**
 
 In the blog directory, create a main.py file.
