@@ -1,10 +1,10 @@
 Step-by-Step Instructions for Creating a Blog App with Flask
 Here’s a more detailed explanation of the steps to set up and build your Flask-based blog app.
 
-Step 1: Set Up Your Project Folder
-Create a new directory for your project.
+**Step 1: Set Up Your Project Folder
+**Create a new directory for your project.
 
-This directory will hold all the files related to your blog app, including your Python code, templates, and markdown posts.
+- This directory will hold all the files related to your blog app, including your Python code, templates, and markdown posts.
 Command (in terminal):
 
 bash
