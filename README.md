@@ -94,9 +94,13 @@ if __name__ == '__main__':
 ```
 ##### Explanation:
 `@app.route('/')`: Maps the home page to the home() function.
+
 `os.listdir('posts')`: Scans the posts folder for Markdown files.
+
 `@app.route('/posts/<path:path>')`: Maps blog post URLs to the post() function, where <path> is the file name of the Markdown post.
+
 `markdown.markdown(content)`: Converts Markdown to HTML.
+
 `render_template()`: Loads the corresponding HTML file from the templates folder.
 
 ##### Directory Structure:
@@ -164,7 +168,7 @@ mkdir posts
 ```
 Add your first post:
 
-Create posts/hello.md with the following content:
+Create `posts/hello.md` with the following content:
 ```markdown
 Copy code
 # Hello
