@@ -26,7 +26,8 @@ blog/
 ├── .venv/  # Virtual environment folder
 ```
 
-**Step 2: Activate the Virtual Environment**
+## **Step 2: Activate the Virtual Environment**
+
 Activate the virtual environment to use the isolated Python environment.
 
 Command (Windows PowerShell):
@@ -35,7 +36,8 @@ Command (Windows PowerShell):
 ```
 Once activated, your terminal prompt will show `(.venv)` to indicate you’re working inside the virtual environment.
 
-**Step 3: Install Required Packages**
+## **Step 3: Install Required Packages**
+
 Use pip (Python’s package installer) to install Flask and Markdown.
 
 Command:
@@ -51,7 +53,8 @@ Copy code
 blog/
 ├── .venv/  # Virtual environment folder
 
-**Step 4: Create Your Flask App**
+## **Step 4: Create Your Flask App**
+
 In the blog directory, create a main.py file.
 
 Command:
@@ -100,7 +103,8 @@ blog/
 ├── .venv/  # Virtual environment folder
 ├── main.py  # Flask app
 
-**Step 5: Create Templates and Posts**
+## **Step 5: Create Templates and Posts**
+
 Inside the blog directory, create a templates folder to store HTML templates.
 
 Command:
@@ -168,7 +172,8 @@ blog/
 ├── posts/        # Blog posts
 │   └── hello.md
 
-**Step 6: Run Your Flask App**
+## **Step 6: Run Your Flask App**
+
 Start the Flask server.
 
 Command:
