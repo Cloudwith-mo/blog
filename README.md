@@ -8,18 +8,18 @@ This guide explains how to set up and build a blog app using Flask, a lightweigh
 
 Create a new directory for your project. This directory will hold all the files related to your blog app, including your Python code, templates, and Markdown posts.
 
-#### Commands:
+##### Commands:
 ```bash
 mkdir blog
 cd blog
 ```
 Inside the blog directory, set up a virtual environment. A virtual environment ensures that your project dependencies don’t interfere with other Python projects.
 
-#### Command:
+##### Command:
 ```bash
 python -m venv .venv
 ```
-Directory Structure:
+##### Directory Structure:
 ```bash
 blog/
 ├── .venv/  # Virtual environment folder
@@ -29,7 +29,7 @@ blog/
 
 Activate the virtual environment to use the isolated Python environment.
 
-#### Command (Windows PowerShell):
+##### Command (Windows PowerShell):
 ```bash
 .venv\Scripts\Activate.ps1
 ```
@@ -39,7 +39,7 @@ Once activated, your terminal prompt will show `(.venv)` to indicate you’re wo
 
 Use pip (Python’s package installer) to install Flask and Markdown.
 
-#### Command:
+##### Command:
 ```bash
 pip install flask markdown
 ```
@@ -57,14 +57,15 @@ blog/
 
 In the blog directory, create a main.py file.
 
-Command:
-bash
+##### Command:
+```bash
 Copy code
 echo. > main.py
+```
 Open the main.py file in your code editor (e.g., VSCode) and add the following code:
 
-Code:
-python
+##### Code:
+```python
 Copy code
 from flask import Flask, render_template
 import markdown
@@ -90,32 +91,37 @@ def post(path):
 
 if __name__ == '__main__':
     app.run(debug=True)
-Explanation:
-@app.route('/'): Maps the home page to the home() function.
-os.listdir('posts'): Scans the posts folder for Markdown files.
-@app.route('/posts/<path:path>'): Maps blog post URLs to the post() function, where <path> is the file name of the Markdown post.
-markdown.markdown(content): Converts Markdown to HTML.
-render_template(): Loads the corresponding HTML file from the templates folder.
-Directory Structure:
-bash
+```
+##### Explanation:
+`@app.route('/')`: Maps the home page to the home() function.
+`os.listdir('posts')`: Scans the posts folder for Markdown files.
+`@app.route('/posts/<path:path>')`: Maps blog post URLs to the post() function, where <path> is the file name of the Markdown post.
+`markdown.markdown(content)`: Converts Markdown to HTML.
+`render_template()`: Loads the corresponding HTML file from the templates folder.
+
+##### Directory Structure:
+```bash
 Copy code
 blog/
 ├── .venv/  # Virtual environment folder
 ├── main.py  # Flask app
+```
 
 ## **Step 5: Create Templates and Posts**
 
 Inside the blog directory, create a templates folder to store HTML templates.
 
-Command:
-bash
-Copy code
+##### Command:
+```bash
 mkdir templates
-Inside the templates folder, create two files:
+```
 
-index.html: For the homepage.
-post.html: For individual blog posts.
-index.html Code:
+Inside the `templates` folder, create two files:
+`index.html`: For the homepage.
+`post.html`: For individual blog posts.
+
+`index.html` Code:
+```
 html
 Copy code
 <!DOCTYPE html>
@@ -132,7 +138,9 @@ Copy code
     </ul>
 </body>
 </html>
-post.html Code:
+```
+`post.html` Code:
+```
 html
 Copy code
 <!DOCTYPE html>
@@ -146,22 +154,25 @@ Copy code
     </div>
 </body>
 </html>
-Create a posts folder for storing Markdown files.
+```
+Create a `posts` folder for storing Markdown files.
 
-Command:
-bash
+##### Command:
+```bash
 Copy code
 mkdir posts
+```
 Add your first post:
 
 Create posts/hello.md with the following content:
-markdown
+```markdown
 Copy code
 # Hello
 
 This is my first blog post!
-Directory Structure:
-bash
+```
+##### Directory Structure:
+```bash
 Copy code
 blog/
 ├── .venv/        # Virtual environment folder
@@ -171,15 +182,17 @@ blog/
 │   └── post.html
 ├── posts/        # Blog posts
 │   └── hello.md
+```
 
 ## **Step 6: Run Your Flask App**
 
 Start the Flask server.
 
 Command:
-bash
+```bash
 Copy code
 python main.py
+```
 Open your browser and go to http://127.0.0.1:5000.
 
 Now you have a fully functional blog app with Flask. Happy blogging!
